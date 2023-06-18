@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">B58</string>
+    <string name="Input">-</string>
+    <string name="Output">0</string>
+    <string name="A1">1</string>
+    <string name="A2">2</string>
+    <string name="A3">3</string>
+    <string name="A4">4</string>
+    <string name="cal">CALCULATE</string>
+    <string name="i1">+</string>
+    <string name="i2">-</string>
+    <string name="i3">*</string>
+    <string name="i4">/</string>
+</resources>

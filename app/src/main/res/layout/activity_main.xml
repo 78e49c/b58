@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/first_mem"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:hint="@string/Input"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/first_textView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Output"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/first_mem"
+        app:layout_constraintTop_toTopOf="@+id/first_mem" />
+
+    <EditText
+        android:id="@+id/second_mem"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:autofillHints=""
+        android:hint="@string/Input"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_mem" />
+
+    <TextView
+        android:id="@+id/second_textView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Output"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/second_mem"
+        app:layout_constraintTop_toTopOf="@+id/second_mem" />
+
+
+    <EditText
+        android:id="@+id/third_mem"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:autofillHints=""
+        android:hint="@string/Input"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_mem" />
+
+    <TextView
+        android:id="@+id/third_textView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Output"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/third_mem"
+        app:layout_constraintTop_toTopOf="@+id/third_mem" />
+
+
+    <EditText
+        android:id="@+id/fourth_mem"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:allowUndo="true"
+        android:autofillHints=""
+        android:hint="@string/Input"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_mem" />
+
+    <TextView
+        android:id="@+id/fourth_textView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Output"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fourth_mem"
+        app:layout_constraintTop_toTopOf="@+id/fourth_mem" />
+
+    <RadioGroup
+        android:id="@+id/first_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="70dp"
+        android:checkedButton="@id/first_rg_1"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_mem">
+
+
+        <RadioButton
+            android:id="@+id/first_rg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/A1" />
+
+        <RadioButton
+            android:id="@+id/first_rg_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/A2" />
+
+        <RadioButton
+            android:id="@+id/first_rg_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/A3"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <RadioButton
+            android:id="@+id/first_rg_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/A4" />
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/second_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/second_rg_2"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/first_rg"
+        app:layout_constraintTop_toTopOf="@+id/first_rg">
+
+
+        <RadioButton
+            android:id="@+id/second_rg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/A1" />
+
+        <RadioButton
+            android:id="@+id/second_rg_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/A2" />
+
+        <RadioButton
+            android:id="@+id/second_rg_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/A3" />
+
+        <RadioButton
+            android:id="@+id/second_rg_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/A4" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/third_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/third_rg_3"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/second_rg"
+        app:layout_constraintTop_toTopOf="@+id/first_rg">
+
+
+        <RadioButton
+            android:id="@+id/third_rg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i1" />
+
+        <RadioButton
+            android:id="@+id/third_rg_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i2" />
+
+        <RadioButton
+            android:id="@+id/third_rg_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i3" />
+
+        <RadioButton
+            android:id="@+id/third_rg_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i4" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/fourth_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/fourth_rg_3"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/third_rg"
+        app:layout_constraintTop_toTopOf="@+id/first_rg">
+
+
+        <RadioButton
+            android:id="@+id/fourth_rg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/A1" />
+
+        <RadioButton
+            android:id="@+id/fourth_rg_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/A2" />
+
+        <RadioButton
+            android:id="@+id/fourth_rg_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/A3" />
+
+        <RadioButton
+            android:id="@+id/fourth_rg_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/A4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="@string/cal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_rg" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
